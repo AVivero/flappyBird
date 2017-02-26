@@ -6,8 +6,7 @@ var Environment = function (canvas, ctx) {
     this.ctx = ctx;
     this.backgroundPosition = 0;
     this.backgroundSpeed = -2;
-    this.backgroundWidth = 575;
-//this.foregraoundPosition = 0;
+    this.backgroundWidth = 700;
     this.backgroundImage = document.getElementById('background');
 }
 

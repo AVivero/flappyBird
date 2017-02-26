@@ -12,6 +12,7 @@ const Bird = function (x, y, ctx) {
     this.lastDraw = 0;
     this.ticks = 0;
     var self = this;
+    this.score = 0;
 
     window.addEventListener('keydown', function (e) {
         if (e.keyCode === 32) {
@@ -26,11 +27,12 @@ Bird.prototype.update = function () {
     this.speedY -= 1;
 }
 
+
 Bird.prototype.render = function () {
     var renderX = this.x - this.width / 2;
     var renderY = this.y - this.height / 2;
     this.ticks++;
     if (this.ticks % 5 === 0) this.lastDraw = (this.lastDraw + 1) % this.sprites.length;
     this.ctx.drawImage(this.sprites[this.lastDraw], renderX, renderY);
-    
+
 }

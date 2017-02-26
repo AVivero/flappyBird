@@ -1,9 +1,38 @@
+
 body {
     margin: 0;
     padding: 0;
-    text-align: center;
+    background-color: #6D8100;
+    font-family: Headline, sans-serif, Calibri;
+    color: white;
 }
 
 img {
     display: none;
+}
+
+.bottomBar {
+    display: flex;
+    justify-content: center;
+}
+
+#score {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4px;
+    font-size: 1.8rem;
+}
+
+#gameOver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+@font-face {
+    font-family: 'Headline', Calibri, sans-serif;
+    src: url(assets/fonts/headlineFont.ttf) format("truetype");
 }
